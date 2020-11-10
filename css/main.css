@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{
+	background: url("../img/bg2.png") no-repeat fixed;
+	background-size: cover;
+	position: relative;
+	height: 100%;
+}
+
+p{
+	margin-bottom: 0px;
+}
+
+.logo{
+	
+}
+
+.large-header {
+	position: fixed;
+	bottom: 0;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+	
+}
+
+.container{
+	align-self: center;
+	left: 0px;
+	right: 0px;
+	position: fixed;
+	bottom: 150px;
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 1.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 1.5s;/*针对webkit内核*/
+	
+}
+
+.title{
+	color: white;
+	font-weight: bold;
+	padding: 0px;
+	font-size: 60px;
+	-webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+
+.subtitle{
+	color:gray;
+	font-size: 16px;
+	-webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+
+#start-btn{
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	background-color: transparent;
+	color: white;
+	border-width: 3px;
+	border-radius: 60px;
+	border: solid;
+	padding: 20px;
+	padding-left: 85px;
+	padding-right: 85px;
+	font-size: 1.5em;
+	-webkit-transition-duration: 0.6s; 
+    transition-duration: 0.6s;
+}
+
+@media screen and (max-device-width: 800px){
+	.title{font-size: 36px;}
+	.subtitle{font-size: 6px;}
+	#start-btn{
+		font-size: 1em;
+		height: 80px;
+		width: 160px;
+		padding: 20px;
+		padding-bottom: 8px;
+		padding-top: 8px;
+	}
+}
+
+#start-btn:hover{
+	background-color: white;
+	color: rgb(20,13,47);
+	border-width: 3px;
+	border-radius: 50px;
+	border: solid;
+}
+
+@keyframes fade-in {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    40% {opacity: 0;}/*过渡状态 透明度为0*/  
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;}  
+}

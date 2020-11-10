@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon"  href="./img/duck.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>Giao&ensp;OS</title>
+<!-- Bootstrap --> 
+<!-- <link href="css/bootstrap-4.4.1.css" rel="stylesheet"> -->
+<link href="css/introduction.css" rel="stylesheet">
+<link href="css/swiper-bundle.css" rel="stylesheet">
+</head>
+<body>
+<!-- body code goes here -->
+<nav class="nav">
+  <div class="container">
+    <div class="logo"> <a href="#">Giao</a> </div>
+    <div id="mainListDiv" class="main_list">
+      <ul class="navlinks">
+        <li><a onclick="$('html,body').animate({ scrollTop: $('#feature').offset().top - 10 }, 200)">特色</a></li>
+        <li><a onclick="$('html,body').animate({ scrollTop: $('#function').offset().top - 10 }, 200)">功能</a></li>
+        <li><a onclick="$('html,body').animate({ scrollTop: $('#demo').offset().top - 10 }, 200)">展示</a></li>
+        <li><a onclick="$('html,body').animate({ scrollTop: $('#about').offset().top - 10 }, 200)">关于</a></li>
+      </ul>
+    </div>
+    <span class="navTrigger"> <i></i> <i></i> <i></i> </span> </div>
+</nav>
+<div class="contents">
+  <div align="center" style="margin-top:140px">
+    <embed id="big-logo" width="500px" src="img/coolapk.svg"/>
+    <p id="title">Giao&ensp;OS</p>
+    <p id="slogan">生活，本该如此优雅</p>
+  </div>
+  <div class="title">
+    <p id="feature">特色</p>
+  </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-zoom-container"><img class="aod" src="img/aod/1.jpg"></img></div>
+      <div class="swiper-slide swiper-zoom-container"><img class="aod" src="img/aod/2.jpg"></img></div>
+      <div class="swiper-slide swiper-zoom-container"><img class="aod" src="img/aod/3.jpg"></img></div>
+      <div class="swiper-slide swiper-zoom-container"><img class="aod" src="img/aod/4.jpg"></img></div>
+      <div class="swiper-slide swiper-zoom-container"><img class="aod" src="img/aod/5.jpg"></img></div>
+    </div>
+  </div>
+  <div class="details">
+    <div class="feature">
+      <p class="title"><span class="highlight-title">熄屏显示</span><br>
+        熄屏看画，<br>
+        动趣应你而生</p>
+      <p class="introduction">蒙德里安风格艺术、矛盾空间、街头文艺，都走进你的手机屏幕，将熄屏显示变身为展现品味的数字艺廊。你更可以自定义涂鸦文字和 GIF 图，创作出生动有趣的熄屏显示。</p>
+    </div>
+    <div class="title">
+      <p id="function">功能</p>
+    </div>
+  </div>
+  <div class="feature">
+    <video muted class="video-demo" loop="true" autoplay="true" src="https://t.revincx.icu/video/window.mp4"></video>
+    <video muted class="video-demo" loop="true" autoplay="true" src="https://t.revincx.icu/video/window2.mp4"></video>
+    <div style="display:inline">
+      <p class="title"><span class="highlight-title">自由窗口</span><br>
+        随手一拖，<br>
+        变身迷你小窗<br>
+        <br>
+        <span class="subtitle">刷网课，打游戏，<br>
+        两边都不耽搁</span></p>
+    </div>
+  </div>
+  <div class="feature">
+    <p class="title"><span class="highlight-title">语音助手<br>
+      </span>私人定制，<br>
+      更智能更懂你<br>
+      <br>
+      <span class="subtitle">内置了人工智能语音助手小G同学，每一次对话都将是新体验</span></p>
+    <embed class="svg" src="./img/voice.svg" width="35%"></embed>
+  </div>
+  <div class="title">
+    <p id="demo">展示</p>
+  </div>
+  <div class="feature">
+    <video controls="controls" src="https://t.revincx.icu/video/demo.mp4" id="presentation-video"></video>
+  </div>
+  <div class="title">
+    <p id="about">关于</p>
+  </div>
+  <div class="about">
+  	<p>•&ensp;本作品作者：<a href="https://github.com/Revincx">Revincx</a>，<a href="https://github.com/Sky-River-Z">Sky-River</a>(做的太菜，匿了匿了)</p>
+	<p>•&ensp;本作品中部分素材可能存在侵权，请勿对外传播</p>
+	<p>•&ensp;本作品用到的开源库：<a href="https://jquery.com/">JQuery</a>，<a href="https://swiperjs.com/">Swiper</a></p>
+	<p>•&ensp;本作品内容仅供娱乐，请勿较真</p>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+<script src="js/introduction.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<!--<script src="js/popper.min.js"></script> --> 
+<!-- <script src="js/bootstrap-4.4.1.js"></script> --> 
+<script src="js/swiper-bundle.js"></script> 
+<script>
+    var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 4,
+  loop: true,
+  speed: 900,
+  spaceBetween: 0,
+  effect: 'coverflow',
+  centeredSlides: true,
+  autoplay: {
+  delay: 2000,
+  },
+});
+</script>
+</body>
+</html>
+
+<!-- 为什么我在提交作品的时候没有把注释删掉呢，因为我认为，每一行注释都是我们努力的痕迹 -->
