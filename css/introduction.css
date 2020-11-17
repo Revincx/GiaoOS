@@ -9,26 +9,34 @@ body {
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
 	position: relative;
-	height: 100%;
 
 	
 /*	background: url("../img/bg.png") no-repeat scroll;*/
 }
 
 a{
-	color: #06b0ff;
-	text-decoration: none;
+	color: #059bff;
 	transition-duration: 0.5s;
 }
 
+
 a:hover{
-	color: #ffffff;
-	background-color: #53daff;
+	background-color: rgba(33, 150, 243, 0.2);
+	text-decoration: none;
+	color: #059bff;
+}
+
+.normal-text{
+	font-size: 2em;
+}
+
+.nav-container{
+	width: 100%;
 }
 
 .contents{
 	position: relative;
-	width: 100%;
+	margin: 8%;
 	height: 100%;
 	animation: fade-in;
 	animation-duration: 1.2s;
@@ -38,16 +46,13 @@ a:hover{
 .title{
 	color: black;
 	vertical-align: top;
-	display: inline-block;
-	font-size: 4em;
-	margin-left: 150px;
+	font-size: 2em;
 	font-weight: bold;
-	max-width: 420px;
 }
 
 .subtitle{
 	color: gray;
-	font-size: 0.7em;
+	font-size: 0.8em;
 	font-weight: normal;
 }
 
@@ -57,13 +62,17 @@ a:hover{
 
 #title{
     font-weight: bold;
-    font-size: 4.5em;
-    margin-top: 50px;
+    font-size: 3em;
+    margin-top: 30px;
 }
 #slogan{
     color: gray;
-    font-size: 2em;
+    font-size: 1.4em;
     margin-bottom: 180px;
+}
+
+#more{
+	margin-top: 5%;
 }
 
 .details{	
@@ -72,38 +81,39 @@ a:hover{
 
 .feature{
 	position: relative;
-	margin-top: 40px;
-	align-items: flex-start;
+	margin-top: 80px;
 	flex-direction: row;
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 	
 }
 
+.text-float{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
 .introduction{
-	align-self: flex-start;
-	display: inline-block;
 	color: gray;
-	width: 50%;
-	font-size: 2.6em;
-	margin-left: 150px;
+	font-size: 1.6em;
 }
 
 .video-demo{
-	width: 350px;
-	margin-left: 150px;
-	border-radius: 10px;
-	display: inline-block;
+	background-color: transparent;
+	border-radius: 30px;
 }
 
-.svg{
-	display: inline-block;
-	margin-left: 400px;
-	margin-top: 2%;
+.more-img{
+	width: 11%;
+	border-radius: 15px;
 }
+
 
 .about{
-	margin-left: 8%;
-	font-size: 2em;
+	margin-left: 2%;
+	font-size: 1.4em;
 	margin-bottom: 60px;
 	margin-top: 40px;
 }
@@ -111,19 +121,16 @@ a:hover{
 #presentation-video{
 			display: block;
 			border-radius: 15px;
-			margin: 150px;
-			max-width: 80%;
+			max-width: 100%;
 		}
 
-.swiper-container {
-      width: 100%;
+.swiper1-container {
+/*      width: 100%; */
 	  margin-top: 60px;
-	  margin-left: auto;
-      margin-right: auto;
     }
 
 
-.swiper-slide {
+.swiper1-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -144,12 +151,17 @@ a:hover{
   align-items: center;
 }
 
+.carousel{
+	margin-top: 40px;
+}
+
+.d-block{
+	border-radius: 15px;
+}
+
 .aod{
 	width: 60%;
 	border-radius: 16px;
-}
-p{
-	margin: 10px auto;
 }
 
 /*-- Inspiration taken from abdo steif -->
@@ -159,9 +171,7 @@ p{
 
 .nav {
     width: 100%;
-    height: 30px;
     line-height: 65px;
-    text-align: center;
 }
 
 .nav div.logo {
@@ -196,14 +206,15 @@ p{
     width: auto;
     height: 65px;
     padding: 0;
-    padding-right: 3rem;
+    padding-right: 1rem;
 }
 
 .nav div.main_list ul li a {
     text-decoration: none;
     color: #000;
     line-height: 65px;
-    font-size: 2.4rem;
+    font-size: 1.6em;
+	margin-right: 30px;
 	-webkit-transition-duration: 0.6s; 
     transition-duration: 0.6s;
 }
@@ -235,7 +246,7 @@ p{
 /* Media qurey section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
+    .nav-container {
         margin: 12px;
     }
 }
@@ -254,7 +265,7 @@ p{
     }
     .nav div.show_list {
 		position: fixed;
-        height: 36%;
+        height: 38%;
 		right: 0;
 		z-index: 5;
 		margin-top: 80px;
@@ -267,7 +278,6 @@ p{
     }
     .nav div.main_list ul {
         flex-direction: column;
-        width: 70%;
         height: 100vh;
         right: 0;
         left: 0;
@@ -286,6 +296,7 @@ p{
         width: 100%;
         font-size: 1.6rem;
         padding: 20px;
+		margin-right: 0;
     }
 	
 	.nav div.main_list ul li a:hover{
@@ -312,15 +323,10 @@ p{
 		align-items:center ;
 	}
 	
-	.feature{
-	}
 	
 	.title{
-		font-size: 2.4em;
+		font-size: 1.8em;
 		display: block;
-		margin-left: 75px;
-		max-width: fit-content;
-		margin-right: 75px;
 	}
 	
 	.navlinks{
@@ -328,35 +334,18 @@ p{
 	}
 	
 	.introduction{
-		margin-left: 75px;
 		font-size: 1.6em;
 		width: fit-content;
-		margin-right: 75px;
 	}
 	
 	.video-demo{
 		width: 60%;
-		margin-left: 75px;
-		text-align: center;
-		/* margin-left: 75px;; */
-	}
-	
-	.svg{
-		text-align: center;
-		margin-top: 75px;
-		display: block;
-		margin-left: 75px;
-		width: auto;
-		max-width: 70%;
-	}
-	
-	#presentation-video{
-		margin: 75px;
+		margin-bottom: 20px;
+		margin-right: 0;
 	}
 	
 	.about{
-		font-size: 1.4em;
-		margin-left: 90px;
+		font-size: 1.0em;
 	}
 }
 

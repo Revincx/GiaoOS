@@ -42,14 +42,14 @@ p{
 	color: white;
 	font-weight: bold;
 	padding: 0px;
-	font-size: 60px;
+	font-size: 45px;
 	-webkit-transition-duration: 0.6s;
     transition-duration: 0.6s;
 }
 
 .subtitle{
 	color:gray;
-	font-size: 16px;
+	font-size: 14px;
 	-webkit-transition-duration: 0.6s;
     transition-duration: 0.6s;
 }
